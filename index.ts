@@ -5,7 +5,7 @@ import { Agent, run, OpenAIConversationsSession } from "@openai/agents";
 import Zod from "zod";
 import crypto from "crypto";
 import { OpenAI } from "openai";
-import { CALL_INSTRUCATION_PROMPT, SYSTEM_PROMPT, VOICE_INSTRUCTIONS } from "./sys.ts";
+import { CALL_INSTRUCATION_PROMPT, SYSTEM_PROMPT, VOICE_INSTRUCTIONS } from "./sys";
 import fs from "fs";
 
 const app = express();
