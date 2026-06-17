@@ -108,10 +108,6 @@ app.post("/", async (req: Request, res: Response) => {
     if (useVoice && output) {
       const audioBase64 = await generateVoice(output.message);
 
-      fs.writeFileSync(
-        "test.mp3",
-        Buffer.from(audioBase64, "base64")
-      );
 
       return res.json({
         token: sessionToken,
